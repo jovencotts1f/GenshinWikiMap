@@ -47,5 +47,5 @@ with zipfile.ZipFile(Path() / 'resources' / 'genshin_resources.zip', 'w', zipfil
             f.write(file, str(file).replace('\\', '/').lstrip('resources').lstrip('/'))
 
 with zipfile.ZipFile(Path() / 'resources' / 'genshin_splash.zip', 'w', zipfile.ZIP_DEFLATED) as f:
-    for file in (Path() / 'resources' / "splash").iterdir():
+    for file in (Path() / 'resources' / 'splash').iterdir():
         f.write(file, file.name)
